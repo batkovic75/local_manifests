@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="ssh://git@github.com/batkovic75"
-          name="batkovic75"
+  <remote fetch="ssh://git@github.com/lineage-muyu"
+          name="lineage-muyu"
           revision="lineage-23.2" />
 
   <!-- Sync required hals -->
@@ -9,22 +9,22 @@
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github" revision="lineage-23.2" />
 
   <!-- Sync common trees -->
-  <project path="device/xiaomi/sm8635-common" name="android_device_xiaomi_sm8635-common" remote="batkovic75" />
-  <project path="vendor/xiaomi/sm8635-common" name="android_vendor_xiaomi_sm8635-common" remote="batkovic75" />
+  <project path="device/xiaomi/sm8635-common" name="android_device_xiaomi_sm8635-common" remote="lineage-muyu" />
+  <project path="vendor/xiaomi/sm8635-common" name="android_vendor_xiaomi_sm8635-common" remote="lineage-muyu" />
 
   <!-- Sync muyu trees -->
-  <project path="device/xiaomi/muyu" name="android_device_xiaomi_muyu" remote="batkovic75" />
-  <project path="device/xiaomi/muyu-kernel" name="android_device_xiaomi_muyu-kernel" remote="batkovic75" />
-  <project path="vendor/xiaomi/muyu" name="android_vendor_xiaomi_muyu" remote="batkovic75" />
+  <project path="device/xiaomi/muyu" name="android_device_xiaomi_muyu" remote="lineage-muyu" />
+  <project path="device/xiaomi/muyu-kernel" name="android_device_xiaomi_muyu-kernel" remote="lineage-muyu" />
+  <project path="vendor/xiaomi/muyu" name="android_vendor_xiaomi_muyu" remote="lineage-muyu" />
 
   <!-- Kernel source (for make headers_install) -->
-  <project path="kernel/xiaomi/sm8635" name="android_kernel_xiaomi_sm8635" remote="batkovic75" revision="lineage-23.0" />
+  <project path="kernel/xiaomi/sm8635" name="android_kernel_xiaomi_sm8635" remote="lineage-muyu" revision="lineage-23.0" />
 
   <!-- Forked vendor/lineage (kernel headers injection patch) -->
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="batkovic75" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="lineage-muyu" />
 
   <!-- Forked QC audio HALs (header export fixes) -->
-  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" remote="batkovic75" revision="lineage-23.2-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="batkovic75" revision="lineage-23.2-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="batkovic75" revision="lineage-23.2-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" remote="lineage-muyu" revision="lineage-23.2-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="lineage-muyu" revision="lineage-23.2-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="lineage-muyu" revision="lineage-23.2-caf-sm8650" />
 </manifest>
